@@ -1,5 +1,5 @@
 let hasValue: boolean = true;
-let count: number = 10;
+let count: number = 11;
 let float: number = 3.14;
 let negative: number = -0.12;
 let single: string = 'hello';
@@ -112,9 +112,9 @@ function sayHello2(): undefined {
 }
 console.log(sayHello());
 let tmp: undefined = undefined;
-let tmp2: undefined = null;
+// let tmp2: undefined = null;
 let tmp3: null = null;
-let tmp4: null = undefined;
+// let tmp4: null = undefined;
 
 const anotherAdd: (n1: number, n2: number) => number = add;
 const anotherAdd2: (n1: number, n2: number) => number = function (num1: number, num2: number): number {

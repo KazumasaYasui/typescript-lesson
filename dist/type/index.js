@@ -1,27 +1,28 @@
-var hasValue = true;
-var count = 10;
-var float = 3.14;
-var negative = -0.12;
-var single = 'hello';
-var double = "hello";
-var back = "hello";
-var hasValue2 = true;
-var count2 = 10;
-var float2 = 3.14;
-var negative2 = -0.12;
-var single2 = 'hello';
-var double2 = "hello";
-var back2 = "hello";
-var hello;
+"use strict";
+let hasValue = true;
+let count = 11;
+let float = 3.14;
+let negative = -0.12;
+let single = 'hello';
+let double = "hello";
+let back = `hello`;
+let hasValue2 = true;
+let count2 = 10;
+let float2 = 3.14;
+let negative2 = -0.12;
+let single2 = 'hello';
+let double2 = "hello";
+let back2 = `hello`;
+let hello;
 hello = 'hello';
-var person = {
+const person = {
     name: {
         first: 'Jack',
         last: 'Smith'
     },
     age: 21
 };
-var person2 = {
+const person2 = {
     name: {
         first: 'Jack',
         last: 'Smith'
@@ -29,12 +30,12 @@ var person2 = {
     age: 21
 };
 console.log(person2);
-var fruits = ['Apple', 'Banana', 'Grape'];
-var fruit = fruits[0];
+const fruits = ['Apple', 'Banana', 'Grape'];
+const fruit = fruits[0];
 fruit.length;
-var fruits2 = ['Apple', 'Banana', 'Grape', 1];
-var fruits3 = ['Apple', 'Banana', 'Grape', 1];
-var book = ['bussiness', 1500, false];
+const fruits2 = ['Apple', 'Banana', 'Grape', 1];
+const fruits3 = ['Apple', 'Banana', 'Grape', 1];
+const book = ['bussiness', 1500, false];
 book.push(21);
 // console.log(book[3]);
 var CoffeeSize;
@@ -44,7 +45,7 @@ var CoffeeSize;
     CoffeeSize[CoffeeSize["GRANDE"] = 2] = "GRANDE";
     CoffeeSize[CoffeeSize["VENTI"] = 3] = "VENTI";
 })(CoffeeSize || (CoffeeSize = {}));
-var coffee = {
+const coffee = {
     hot: true,
     size: CoffeeSize.TALL
 };
@@ -52,25 +53,25 @@ var coffee = {
 // coffee.size = 'SHORT';
 coffee.size = CoffeeSize.SHORT;
 console.log(coffee.size);
-var anything = true;
+let anything = true;
 anything = 'hello';
 anything = 123;
 anything = ['hello', 33, true];
 anything = {};
 anything.hoeghoge = 'hogehoge';
-var banana = 'banana';
+let banana = 'banana';
 banana = anything;
-var unionType = 10;
+let unionType = 10;
 // unionType.toUpperCase();
 unionType = 'hello';
 unionType.toUpperCase();
-var unionTypes = [21, 'hello', 999, 'Yes'];
-var apple = 'apple';
-var numZero = 0;
-var boolTrue = true;
-var grape = 'grape';
-var clothSize = 'large';
-var cloth = {
+let unionTypes = [21, 'hello', 999, 'Yes'];
+const apple = 'apple';
+const numZero = 0;
+const boolTrue = true;
+const grape = 'grape';
+let clothSize = 'large';
+const cloth = {
     color: 'white',
     size: clothSize
 };
@@ -87,32 +88,32 @@ function sayHello2() {
     return;
 }
 console.log(sayHello());
-var tmp = undefined;
-var tmp2 = null;
-var tmp3 = null;
-var tmp4 = undefined;
-var anotherAdd = add;
-var anotherAdd2 = function (num1, num2) {
+let tmp = undefined;
+// let tmp2: undefined = null;
+let tmp3 = null;
+// let tmp4: null = undefined;
+const anotherAdd = add;
+const anotherAdd2 = function (num1, num2) {
     return num1 + num2;
 };
-var anotherAdd3 = function (num1, num2) {
+const anotherAdd3 = function (num1, num2) {
     return num1 + num2;
 };
-var anotherAdd4 = function (num1, num2) {
+const anotherAdd4 = function (num1, num2) {
     return num1 + num2;
 };
-var doubleNumber = function (num) { return num * 2; };
-var doubleNumber2 = function (num) { return num * 2; };
+const doubleNumber = (num) => num * 2;
+const doubleNumber2 = num => num * 2;
 function doubleAndHandle(num, cb) {
-    var doubleNum = cb(num * 2);
+    const doubleNum = cb(num * 2);
     console.log(doubleNum);
 }
-doubleAndHandle(21, function (doubleNum) {
+doubleAndHandle(21, doubleNum => {
     return doubleNum;
 });
-var unknownInput;
-var anyInput;
-var text;
+let unknownInput;
+let anyInput;
+let text;
 unknownInput = 'hello';
 unknownInput = 21;
 unknownInput = true;
@@ -126,5 +127,8 @@ if (typeof unknownInput === 'string') {
 }
 function error(message) {
     throw new Error(message);
+    // while (true) {
+    // }
 }
 console.log(error('This is an error'));
+//# sourceMappingURL=index.js.map

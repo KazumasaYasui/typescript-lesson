@@ -1,8 +1,8 @@
 // import axios from 'axios'
 
-let hello: string = 'hello';
-console.log(hello);
+let helloGoodBye: string = 'hello';
+console.log(helloGoodBye);
 
-function add(a: number, b: number): number {
+function addNum(a: number, b: number): number {
     return a + b;
 }
