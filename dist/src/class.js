@@ -42,13 +42,21 @@ class Teacher extends Person {
     explainJob() {
         console.log(`I am a teacher and I teach ${this.subject}.`);
     }
+    static getInstance() {
+        if (Teacher.instance)
+            return Teacher.instance;
+        Teacher.instance = new Teacher('KY', 28, 'Math');
+        return Teacher.instance;
+    }
 }
 console.log(Person.species);
 console.log(Teacher.isAdult(27));
-const teacher = new Teacher('KY', 28, 'Math');
+const teacher = Teacher.getInstance();
+const teacher2 = Teacher.getInstance();
 console.log(teacher.subject);
 teacher.subject = 'Japanese';
 teacher.greeting();
+console.log(teacher, teacher2);
 // const yasui = new Person('Yasui', 27);
 // yasui.incrementAge();
 // yasui.greeting();
