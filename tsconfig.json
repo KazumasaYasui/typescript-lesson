@@ -73,7 +73,8 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    "**/index.ts"
+    "**/index.ts",
+    "src/**.ts"
   ],
   "exclude": [
     "**/compiler.ts",

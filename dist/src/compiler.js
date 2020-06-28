@@ -3,7 +3,9 @@
 let hello2 = 'hello';
 console.log(hello2.toUpperCase());
 function echo(message) {
-    return message;
+    if (message) {
+        return message;
+    }
 }
 let implicitAny;
 implicitAny = 'implicitAny';
