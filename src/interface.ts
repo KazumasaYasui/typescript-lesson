@@ -79,4 +79,3 @@ const nameable: Nameable = {
 if (user3.nickname) {
     console.log(user3.nickname.toUpperCase())
 }
-
